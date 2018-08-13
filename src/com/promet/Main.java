@@ -20,10 +20,27 @@ public class Main {
         }
         Arrays.sort(array);
         for (int a = 0; a < array.length; a++) {
-        System.out.println(array[a]);
+//        System.out.println(array[a]);
         }
 
+        //TODO: проверить сколько объектов создает String при конкатенации
+        String one = "one";
+        String t = one + " two";
+//        System.out.println(t + " three");
+
         //TODO: сделать сортировку массива по кратности числа на входе
-        //TODO: сделать сортировку String удаляя спец символы
+
+
+        //TODO: v сделать сортировку String удаляя спец символы
+        String s ="tW_A[S]{D}F@#'$'/^";
+        s = s.toLowerCase();
+        String newS = s.substring(0, 1).toUpperCase() + s.substring(1);
+        char[] sChar = newS.toCharArray();
+        for (int i = 0; i <= sChar.length - 1; i++){
+            if ((sChar[i] >= 'A' && sChar[i] <= 'z') ^ (sChar[i] > 'Z' && sChar[i] < 'a')){
+                System.out.print(sChar[i]);
+            }else {
+            }
+        }
     }
 }
