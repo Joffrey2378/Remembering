@@ -29,7 +29,13 @@ public class Main {
 //        System.out.println(t + " three");
 
         //TODO: сделать сортировку массива по кратности числа на входе
-
+        int[] arr = {58, 34, 81, 76, 49, 135, 23, 11, 5, 64, 9, 12};
+        for (int i = 0; i <= arr.length - 1; i++) {
+            double multiplicity = arr[i] % 3;
+            if (multiplicity == 0) /*if (arr[i] % 3 == 0)*/{
+                System.out.print(arr[i] + " ");
+            }
+        }
 
         //TODO: v сделать сортировку String удаляя спец символы
         String s ="tW_A[S]{D}F@#'$'/^";
@@ -38,7 +44,7 @@ public class Main {
         char[] sChar = newS.toCharArray();
         for (int i = 0; i <= sChar.length - 1; i++){
             if ((sChar[i] >= 'A' && sChar[i] <= 'z') ^ (sChar[i] > 'Z' && sChar[i] < 'a')){
-                System.out.print(sChar[i]);
+//                System.out.print(sChar[i]);
             }else {
             }
         }
